@@ -8,24 +8,18 @@
   display: flex;
   flex-direction: column;
   position: absolute;
+  transform-style: preserve-3d;
 }
-
 .textContainer{
   position: relative;
   cursor: pointer;
-  transform-origin: center;
-  transform-style: preserve-3d;
   transition: transform 0.4s;
+  transform-style: preserve-3d;
 }
 
-.body{
-  will-change: transform;
-  transform-style: preserve-3d;
-}
 .textContainer p{
   font-size: 8vw;
   font-weight: 700;
-  transform-style: preserve-3d;
   margin: 0px;
   transition: all 0.4s;
   color: white;
@@ -33,7 +27,7 @@
 }
 
 .textContainer .secondary{
-  transform: rotateX(-90deg) translate3d(0, 4vw, 0);
+  transform: rotateX(-90deg) translateY(3.5vw);
   transform-origin: bottom center;
   position: absolute;
   top: 0;
@@ -50,7 +44,7 @@
 }
 
 .textContainer:hover .primary{
-  transform: translate3d(0, -100%, 0);
+  transform: translateY(-100%);
   opacity: 0;
 }
 

@@ -9,6 +9,8 @@
   flex-direction: column;
   position: absolute;
   transform-style: preserve-3d;
+  margin-top: 25px;
+  margin-left: 25px;
 }
 .textContainer{
   position: relative;
